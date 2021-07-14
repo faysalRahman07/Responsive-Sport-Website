@@ -1,0 +1,384 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  /* width: 1440px; */
+  height: 677px;
+  background: #2d25a0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main, footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  margin-bottom: 67px;
+}
+.mobile-nav {
+  display: none;
+}
+.navbar-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-left ul li {
+  float: left;
+}
+
+.navbar-left ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-left ul li a:hover {
+  background-color: #e02c6d;
+}
+
+.container {
+  /* display: flex; */
+  /* align-items: center; */
+  
+  width: 80%;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 27px;
+}
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e02c6d;
+  width: 168px;
+  height: 44px;
+}
+
+.action-button a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.action-button a i {
+  margin: 0px 8px;
+}
+
+.content img {
+  width: 556.01px;
+  height: 438px;
+}
+
+.players-album {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  
+}
+
+.player-photo img {
+  width: 300px;
+  height: 256px;
+}
+
+.player-info {
+  margin: 16px 0px;
+  width: 300px;
+  height: 154px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.player-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+}
+
+
+.all-highlights {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 165px;
+  margin-bottom: 158px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.highlight-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+}
+
+.highlight-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-right: 66px;
+  margin-bottom: 24px;
+}
+
+.highlight img {
+  width: 567px;
+  height: 427px;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer-top img {
+  width: 483.87px;
+  height: 110px;
+}
+
+
+.footer-icons .fab {
+  margin: 0px 14px;
+
+  color: #969bab;
+  padding: 7.4px;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+.footer-copyright {
+  margin: 20px 0px 63px 0px;
+}
+
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+  .mobile-nav {
+    display: inherit;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+
+  .contents,
+  .players,
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content,
+  .players,
+  .highlight {
+    flex-direction: column;
+  }
+  .content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 20px 68px 30px 16px;
+  }
+  .action-button {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .content img {
+    width: 329px;
+    height: 259.17px;
+    margin: 50px 15px 62px 15px;
+  }
+  .highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 15px 8px;
+  }
+
+  .highlight-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px 15px 24px;
+  }
+
+  .highlight img {
+    margin: 29px 16px 0px 0px;
+    width: 328px;
+    height: 248px;
+    display: flex;
+  }
+
+  .footer-top img {
+    margin-top: 0px;
+    width: 271px;
+    height: 63px;
+  }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: inherit;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+
+  .contents,
+  .players,
+  .highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content,
+  .players,
+  .highlight {
+    flex-direction: column;
+  }
+
+  .content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 20px 68px 30px 16px;
+  }
+  .action-button {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  .content img {
+    width: 350px;
+    height: 300px;
+    margin: 50px 15px 62px 15px;
+  }
+
+
+  .highlight-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 15px 8px;
+  }
+
+  .highlight-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px 15px 24px;
+  }
+
+  .highlight img {
+    margin: 29px 16px 0px 0px;
+    width: 328px;
+    height: 248px;
+    display: flex;
+  }
+
+  .footer-top img {
+    margin-top: 0px;
+    width: 271px;
+    height: 63px;
+  }
+}
